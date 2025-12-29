@@ -1,112 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catering Services - University of Dar es Salaam Cafeteria</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .services {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .service-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 300px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-card h3 {
-            font-size: 1.6em;
-            color: #003366;
-        }
-
-        .service-card p {
-            font-size: 1.1em;
-            color: #555;
-        }
-
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>University of Dar es Salaam Cafeteria Catering Services</h1>
-        <p>Providing quality catering for events, students, and faculty.</p>
-    </header>
-
-    <section>
-        <h2>Our Catering Services</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>Event Catering</h3>
-                <p>We offer catering for university events, conferences, and meetings with customized meal plans based on your needs. Choose from a variety of meal options that are both delicious and nutritious.</p>
-            </div>
-            <div class="service-card">
-                <h3>Meal Plans</h3>
-                <p>We offer affordable and flexible meal plans for students, faculty, and staff. Get access to a variety of meals on a daily or weekly basis with easy-to-follow packages designed to suit different dietary preferences.</p>
-            </div>
-            <div class="service-card">
-                <h3>Group Orders</h3>
-                <p>Planning a group meeting or class event? We provide catering for group orders, ensuring quick delivery and fresh meals. Perfect for study sessions, seminars, and workshops.</p>
-            </div>
-            <div class="service-card">
-                <h3>Vegetarian & Vegan Options</h3>
-                <p>We offer a wide selection of vegetarian and vegan meals prepared fresh every day. Our meals are designed to meet the dietary needs of all individuals without compromising taste.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 University of Dar es Salaam Cafeteria. All rights reserved.</p>
-    </footer>
-
-</body>
-
-</html>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Catering - BNC UDSM Cafeteria Services</title> 
+    <link rel="stylesheet" href="catering.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&dis
+play=swap" rel="stylesheet"> 
+</head> 
+<body> 
+ 
+<header> 
+    <div class="container nav-container"> 
+        <div class="logo"> 
+            <span class="logo-circle">B</span> 
+            <span class="logo-text">BNC UDSM<br>Cafeteria Services</span> 
+        </div> 
+ 
+        <button class="hamburger" aria-label="Toggle menu"> 
+            <span></span> 
+            <span></span> 
+            <span></span> 
+        </button> 
+ 
+        <nav class="nav-menu"> 
+            <ul> 
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="menu.html">Menu</a></li> 
+                <li><a href="about.html">About</a></li> 
+                <li><a href="services.html">Services</a></li> 
+                <li><a href="gallery.html">Gallery</a></li> 
+                <li><a href="catering.html" class="active">Catering</a></li> 
+                <li><a href="hours.html">Hours</a></li> 
+                <li><a href="reviews.html">Reviews</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul> 
+        </nav> 
+    </div> 
+</header> 
+ 
+<section class="hero"> 
+    <div class="container"> 
+        <h1>Catering Services</h1> 
+        <p>Let us cater your next event with delicious food and professional service</p> 
+    </div> 
+</section> 
+ 
+<section class="features"> 
+    <div class="container feature-grid"> 
+        <div class="feature-item"> 
+            <span class="icon">    </span> 
+            <p>Fresh Ingredients</p> 
+        </div> 
+        <div class="feature-item"> 
+            <span class="icon">      </span> 
+            <p>Professional Staff</p> 
+        </div> 
+        <div class="feature-item"> 
+            <span class="icon">      </span> 
+            <p>Flexible Scheduling</p> 
+        </div> 
+        <div class="feature-item"> 
+            <span class="icon">   </span> 
+            <p>24/7 Support</p> 
+        </div> 
+    </div> 
+</section> 
+ 
+<section class="packages"> 
+    <div class="container"> 
+        <h2>Catering Packages</h2> 
+        <p class="subtitle">Choose from our carefully designed packages or let us create a 
+custom menu</p> 
+ 
+        <div class="package-grid"> 
+            <div class="package-card"> 
+                <h3>Basic Package</h3> 
+                <p class="tag">Perfect for small gatherings and meetings</p> 
+                <div class="price">15,000 <span>TZS per person</span></div> 
+                <ul> 
+                    <li>Main course (choice of 2)</li> 
+                    <li>Side dishes</li> 
+                    <li>Fresh juice or soda</li> 
+                    <li>Disposable utensils</li> 
+                    <li>Setup included</li> 
+                </ul> 
+                <a href="contact.html" class="btn get-quote">Get Quote</a> 
+            </div> 
+ 
+            <div class="package-card popular"> 
+                <div class="popular-badge">Most Popular</div> 
+                <h3>Standard Package</h3> 
+                <p class="tag">Ideal for department events and seminars</p> 
+                <div class="price">25,000 <span>TZS per person</span></div> 
+                <ul> 
+                    <li>Main course (choice of 3)</li> 
+                    <li>Appetizers & salads</li> 
+                    <li>Dessert selection</li> 
+                    <li>Beverages (hot & cold)</li> 
+                    <li>Serving staff</li> 
+                    <li>Setup & cleanup</li> 
+                </ul> 
+                <a href="contact.html" class="btn get-quote">Get Quote</a> 
+            </div> 
+ 
+            <div class="package-card"> 
+                <h3>Premium Package</h3> 
+                <p class="tag">For special occasions and formal events</p> 
+                <div class="price">40,000 <span>TZS per person</span></div> 
+                <ul> 
+                    <li>Full buffet spread</li> 
+                    <li>Premium meat & fish options</li> 
+                    <li>International dishes</li> 
+                    <li>Dessert bar</li> 
+                    <li>Full beverage service</li> 
+                    <li>Professional serving staff</li> 
+                </ul> 
+                <a href="contact.html" class="btn get-quote">Get Quote</a> 
+            </div> 
+        </div> 
+    </div> 
+</section> 
+ 
+<section class="events"> 
+    <div class="container"> 
+        <h2>We Cater All Types of Events</h2> 
+        <p>From intimate meetings to large-scale conferences, our experienced team 
+ensures every event is a success with delicious food and impeccable service.</p> 
+ 
+        <div class="events-grid"> 
+            <div> 
+                <ul> 
+                    <li><span class="check">  </span>Academic conferences</li> 
+                    <li><span class="check">  </span>Department meetings</li> 
+                    <li><span class="check">  </span>Staff functions</li> 
+                    <li><span class="check">  </span>Cultural celebrations</li> 
+                </ul> 
+            </div> 
+            <div> 
+                <ul> 
+                    <li><span class="check">  </span>Graduation ceremonies</li> 
+                    <li><span class="check">  </span>Student club events</li> 
+                    <li><span class="check">  </span>Workshops & seminars</li> 
+                    <li><span class="check">  </span>Private parties</li> 
+                </ul> 
+            </div> 
+        </div> 
+ 
+        <div class="custom-quote"> 
+            <h3>Need a Custom Quote?</h3> 
+            <p>Contact our catering team for personalized packages tailored to your specific 
+requirements and budget.</p> 
+            <p class="phone">+255 762 241 050</p> 
+            <a href="contact.html" class="btn">Contact Catering Team</a> 
+        </div> 
+    </div> 
+</section> 
+ 
+<footer> 
+    <div class="container footer-grid"> 
+        <div class="footer-brand"> 
+            <div class="logo"> 
+                <span class="logo-circle">B</span> 
+                <span class="logo-text">BNC UDSM<br>Cafeteria Services</span> 
+            </div> 
+            <p>Serving the UDSM community with delicious, nutritious meals since 2010. 
+Quality food, friendly service.</p> 
+        </div> 
+ 
+        <div class="footer-links"> 
+            <h4>Quick Links</h4> 
+            <ul> 
+                <li><a href="menu.html">Menu</a></li> 
+                <li><a href="about.html">About</a></li> 
+                <li><a href="services.html">Services</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul> 
+        </div> 
+ 
+        <div class="footer-contact"> 
+            <h4>Contact Us</h4> 
+            <div class="contact-item"> 
+                <span class="icon">    </span> 
+                <span>UDSM Main Campus, Dar es Salaam</span> 
+            </div> 
+            <div class="contact-item"> 
+                <span class="icon">   </span> 
+                <span>+255 22 241 0500</span> 
+            </div> 
+            <div class="contact-item"> 
+                <span class="icon">    </span> 
+                <span>info@bncudsm.co.tz</span> 
+            </div> 
+        </div> 
+ 
+        <div class="footer-hours"> 
+            <h4>Opening Hours</h4> 
+            <div class="hours-item">
