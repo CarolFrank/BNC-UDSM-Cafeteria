@@ -1,0 +1,250 @@
+gallery.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gallery - BNC UDSM Cafeteria Services</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container nav-container">
+        <div class="logo">
+            <span class="logo-circle">B</span>
+            <span class="logo-text">BNC UDSM<br>Cafeteria Services</span>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="hours.html">Hours</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>Take a visual tour of our cafeteria, delicious dishes, and memorable events</p>
+    </div>
+</section>
+
+<section class="gallery-section">
+    <div class="container">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="interior">Interior</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+            <!-- Food -->
+            <div class="gallery-item" data-category="food">
+                <img src="images/pilau.jpeg" alt="Pilau Special" loading="lazy">
+                <div class="caption">Food<br>Pilau Special</div>
+            </div>
+            <div class="gallery-item" data-category="food">
+                <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh Salads" loading="lazy">
+                <div class="caption">Food<br>Fresh Salads</div>
+            </div>
+            <div class="gallery-item" data-category="food">
+                <img src="images/ugalifish.jpeg" alt="Ugali & Fish" loading="lazy">
+                <div class="caption">Food<br>Ugali & Fish</div>
+            </div>
+
+            <!-- Interior -->
+            <div class="gallery-item" data-category="interior">
+                <img src="images/interiordining.jpeg" alt="Dining Area" loading="lazy">
+                <div class="caption">Interior<br>Dining Area</div>
+            </div>
+            <div class="gallery-item" data-category="interior">
+                <img src="images/serving.jpeg" alt="Serving Counter" loading="lazy">
+                <div class="caption">Interior<br>Serving Counter</div>
+            </div>
+            <div class="gallery-item" data-category="interior">
+                <img src="images/cafeteria.jpeg" alt="Cafeteria Interior" loading="lazy">
+                <div class="caption">Interior<br>Breakfast Spread Area</div>
+            </div>
+
+            <!-- Events -->
+            <div class="gallery-item" data-category="events">
+                <img src="images/graduation.jpeg" alt="Graduation Catering" loading="lazy">
+                <div class="caption">Events<br>Graduation Catering</div>
+            </div>
+            <div class="gallery-item" data-category="events">
+                <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Conference Lunch" loading="lazy">
+                <div class="caption">Events<br>Conference Lunch</div>
+            </div>
+            <div class="gallery-item" data-category="events">
+                <img src="images/studentevent.jpeg" alt="Student Club Event" loading="lazy">
+                <div class="caption">Events<br>Student Event Setup</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <span class="prev-btn" id="prevBtn">&#8249;</span>
+    <img class="lightbox-content" id="lightboxImg">
+    <span class="next-btn" id="nextBtn">&#8250;</span>
+    <div class="caption-text" id="captionText"></div>
+</div>
+
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <div class="logo">
+                <span class="logo-circle">B</span>
+                <span class="logo-text">BNC UDSM<br>Cafeteria Services</span>
+            </div>
+            <p>Serving the UDSM community with delicious, nutritious meals since 2010. Quality food, friendly service.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <div class="contact-item">
+                <span class="icon">📍</span>
+                <span>UDSM Main Campus, Dar es Salaam</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <span>+255 22 241 0500</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">✉️</span>
+                <span>info@bncudsm.co.tz</span>
+            </div>
+        </div>
+
+        <div class="footer-hours">
+            <h4>Opening Hours</h4>
+            <div class="hours-item">
+                <span class="icon">🕐</span>
+                <span>Mon - Fri: 6:00 AM - 9:00 PM</span>
+            </div>
+            <div class="hours-item">
+                <span class="icon">🕐</span>
+                <span>Sat - Sun: 7:00 AM - 8:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2025 BNC UDSM Cafeteria Services. All rights reserved.</p>
+        
+    </div>
+</footer>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+
+            galleryItems.forEach(item => {
+                item.style.display = (filter === 'all' || item.getAttribute('data-category') === filter) ? 'block' : 'none';
+            });
+        });
+    });
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const captionText = document.getElementById('captionText');
+    const closeBtn = document.getElementById('closeBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    let currentIndex = 0;
+    const getVisibleItems = () => Array.from(galleryItems).filter(item => item.style.display !== 'none');
+
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            currentIndex = index;
+            updateLightbox();
+        });
+    });
+
+    function updateLightbox() {
+        const visible = getVisibleItems();
+        if (visible.length === 0) return;
+
+        const img = visible[currentIndex].querySelector('img');
+        const caption = visible[currentIndex].querySelector('.caption').innerText;
+
+        lightboxImg.src = img.src;
+        captionText.innerText = caption;
+        lightbox.style.display = 'flex';
+    }
+
+    closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.style.display = 'none'; });
+
+    prevBtn.addEventListener('click', () => {
+        const visible = getVisibleItems();
+        currentIndex = (currentIndex - 1 + visible.length) % visible.length;
+        updateLightbox();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        const visible = getVisibleItems();
+        currentIndex = (currentIndex + 1) % visible.length;
+        updateLightbox();
+    });
+</script>
+
+</body>
+</html>
