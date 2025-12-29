@@ -1,0 +1,153 @@
+hours.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours & Location - BNC UDSM Cafeteria Services</title>
+    <link rel="stylesheet" href="hours.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-circle">B</div>
+            <span class="logo-text">BNC UDSM<br>Cafeteria Services</span>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger">&#9776;</label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="hours.html" class="active">Hours</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hours-hero">
+        <h1>Hours & Location</h1>
+        <p>Find us on campus and check our operating hours.</p>
+    </section>
+
+    <section class="hours-location">
+        <div class="hours-column">
+            <div class="section-icon">⏰</div>
+            <h2>Operating Hours</h2>
+            <table id="hours-table">
+                <tr>
+                    <td>Monday</td>
+                    <td>6:00 AM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>6:00 AM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>6:00 AM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>6:00 AM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>6:00 AM - 9:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>7:00 AM - 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>7:00 AM - 8:00 PM</td>
+                </tr>
+            </table>
+            <p class="note">Note: Hours may vary during holidays, semester breaks, and special events. Check our
+                announcements for updates.</p>
+        </div>
+        <div class="location-column">
+            <div class="section-icon">📍</div>
+            <h2>Our Location</h2>
+            <div id="map-container">
+                <!-- Map will be embedded here -->
+            </div>
+            <p>BNC UDSM Cafeteria<br>University of Dar es Salaam</p>
+            <a href="https://maps.google.com/?q=University+of+Dar+es+Salaam" target="_blank" class="btn btn-primary">Get
+                Directions</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section footer-logo">
+            <div class="logo">
+                <div class="logo-circle">B</div>
+                <span class="logo-text">BNC UDSM<br>Cafeteria Services</span>
+            </div>
+            <p>Serving the UDSM community with delicious, nutritious meals since 2010. Quality food, friendly service.
+            </p>
+        </div>
+        <div class="footer-section footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section footer-contact">
+            <h3>Contact Us</h3>
+            <p>📍 UDSM Main Campus, Dar es Salaam</p>
+            <p>📞 ‪+255 22 241 0500‬</p>
+            <p>✉ info@bncudsm.co.tz</p>
+        </div>
+        <div class="footer-section footer-hours">
+            <h3>Opening Hours</h3>
+            <p>🕒 Mon - Fri: 6:00 AM - 9:00 PM</p>
+            <p>🕒 Sat - Sun: 7:00 AM - 8:00 PM</p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 BNC UDSM Cafeteria Services. All rights reserved.</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Highlight today's day
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const todayIndex = new Date().getDay();
+        const todayDay = days[todayIndex];
+        const rows = document.querySelectorAll('#hours-table tr');
+        rows.forEach(row => {
+            const dayCell = row.querySelector('td:first-child');
+            if (dayCell && dayCell.textContent.trim() === todayDay) {
+                dayCell.textContent = `${todayDay} (Today)`;
+                dayCell.style.color = '#FF8C00';
+            }
+        });
+
+        // Dynamic map embedding
+        const mapContainer = document.getElementById('map-container');
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.527796073!2d39.203487!3d-6.780765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4ec20e640453%3A0xb162aa7ce8c5a7eb!2sUniversity%20of%20Dar%20es%20Salaam!5e0!3m2!1sen!2stz!4v1700000000000';
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.style.border = '0';
+        iframe.loading = 'lazy';
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = 'no-referrer-when-downgrade';
+        mapContainer.appendChild(iframe);
+    </script>
+</body>
+
+</html>
